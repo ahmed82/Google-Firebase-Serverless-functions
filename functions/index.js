@@ -18,3 +18,5 @@ admin.initializeApp({
 exports.createUser = functions.https.onRequest(createUser);
 exports.requestOneTimePassword = functions.https.onRequest(requestOneTimePassword);
 exports.verrifyOneTimePassword = functions.https.onRequest(verrifyOneTimePassword);
+
+/* For Deploy use: 'firebase deploy --project one-time-password-f996d' */

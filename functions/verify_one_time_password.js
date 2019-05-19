@@ -20,7 +20,7 @@ module.exports = function (req, res) {
                 if (user.code !== code || !user.codeValid) {
                     return res.status(422).send({ error: 'code not valid' });
                 }
-                ref.update({ codeValid = false });
+                ref.update({ codeValid: false });
                 // Generate the JWT (JSON Web Token) and send it to the user 
                 admin.auth().createCustomToken(phone)
                     .then(token => res.send({Token : token}))
