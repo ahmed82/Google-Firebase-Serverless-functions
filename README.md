@@ -1,4 +1,4 @@
-﻿# firebase serverless Functions
+﻿# Firebase serverless Functions
 
 Firebase server-less cloud functions for OTP project,
  1.Create user in Firebase
